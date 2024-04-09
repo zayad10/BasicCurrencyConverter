@@ -14,6 +14,5 @@ namespace Simple_Currency_Converter
         BTC, //3
         ETH, //4
         LTC  //5
-
     }
 }
