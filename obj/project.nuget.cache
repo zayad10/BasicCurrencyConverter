@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yMX58YtR4CDetzsciWh/RVwqxxkWPid629Tj6DKxW9DcMrNGbr5FCzbEGSW+qbVB8udaqi8xxEcXDHlhSijmtA==",
+  "dgSpecHash": "7PFdnJNC/jABuIUP8f5h2pcv17AbPUlE5CyYD8w8LP325f3+Av8emUVMM2Nxj8PVchas2B+jdEY9Q9pgesXGXg==",
   "success": true,
   "projectFilePath": "C:\\C# Practise Projects\\BasicCurrencyConverter\\Simple Currency Converter.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Zayad\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

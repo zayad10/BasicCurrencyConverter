@@ -1,0 +1,20 @@
+C:\C# Practise Projects\BasicCurrencyConverter\bin\Debug\net8.0-windows\Simple Currency Converter.exe
+C:\C# Practise Projects\BasicCurrencyConverter\bin\Debug\net8.0-windows\Simple Currency Converter.deps.json
+C:\C# Practise Projects\BasicCurrencyConverter\bin\Debug\net8.0-windows\Simple Currency Converter.runtimeconfig.json
+C:\C# Practise Projects\BasicCurrencyConverter\bin\Debug\net8.0-windows\Simple Currency Converter.dll
+C:\C# Practise Projects\BasicCurrencyConverter\bin\Debug\net8.0-windows\Simple Currency Converter.pdb
+C:\C# Practise Projects\BasicCurrencyConverter\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple Currency Converter.csproj.AssemblyReference.cache
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple_Currency_Converter.Form1.resources
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple Currency Converter.csproj.GenerateResource.cache
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple Currency Converter.GeneratedMSBuildEditorConfig.editorconfig
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple Currency Converter.AssemblyInfoInputs.cache
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple Currency Converter.AssemblyInfo.cs
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple Currency Converter.csproj.CoreCompileInputs.cache
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple Currency Converter.sourcelink.json
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple C.FA450AB3.Up2Date
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple Currency Converter.dll
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\refint\Simple Currency Converter.dll
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple Currency Converter.pdb
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\Simple Currency Converter.genruntimeconfig.cache
+C:\C# Practise Projects\BasicCurrencyConverter\obj\Debug\net8.0-windows\ref\Simple Currency Converter.dll
