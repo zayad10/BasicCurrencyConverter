@@ -2,11 +2,13 @@ using System;
 using System.Windows.Forms;
 using System.Net;
 using Newtonsoft.Json.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Simple_Currency_Converter
 {
     public partial class Form1 : Form
     {
+        private int convertToCurrency = 0;
         public Form1()
         {
             InitializeComponent();
@@ -19,15 +21,26 @@ namespace Simple_Currency_Converter
 
         private double GetExchangeRate(string fromCurrency, string toCurrency)
         {
+            this.convertToCurrency = (int)CurrenciesHelper.GetCurrencyEnum(toCurrency);
             string json;
-
+            var rate = 0.00;
             using (var client = new WebClient())
             {
-                json = client.DownloadString($"https://open.er-api.com/v6/latest/{fromCurrency}");
-            }
+                if (convertToCurrency < 2)
+                {
+                    json = client.DownloadString($"https://open.er-api.com/v6/latest/{fromCurrency}");
 
-            var data = JObject.Parse(json);
-            var rate = (double)data["rates"][toCurrency];
+                    var data = JObject.Parse(json);
+                    rate = (double)data["rates"][toCurrency];
+                }
+                else 
+                {
+                    json = client.DownloadString($"https://api.coinbase.com/v2/prices/{fromCurrency}-{toCurrency}/buy");
+
+                    var data = JObject.Parse(json);
+                    rate = (double)data["data"]["amount"];
+                }
+            }
 
             return rate;
         }
@@ -61,7 +74,7 @@ namespace Simple_Currency_Converter
             }
 
             double convertedAmount = amount * exchangeRate;
-            convertedAmountLabel.Text = $"Converted Amount:  {toCurrency + " " + convertedAmount.ToString("F2")}";
+            convertedAmountLabel.Text = $"Converted Amount:  {toCurrency + " " + (convertToCurrency > 2 ? convertedAmount.ToString("F6") : convertedAmount.ToString("F2"))}";
             conversionRateLabel.Text = $"Conversion Rate: 1 {fromCurrency} = {1 * exchangeRate} {toCurrency}";
         }
     }

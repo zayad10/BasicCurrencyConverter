@@ -67,7 +67,7 @@
             // fromCurrencyBox
             // 
             fromCurrencyBox.FormattingEnabled = true;
-            fromCurrencyBox.Items.AddRange(new object[] { "GBP", "EUR", "USD" });
+            fromCurrencyBox.Items.AddRange(new object[] { "GBP", "EUR", "USD", "BTC", "ETH", "LTC" });
             fromCurrencyBox.Location = new Point(179, 205);
             fromCurrencyBox.Name = "fromCurrencyBox";
             fromCurrencyBox.Size = new Size(181, 23);
@@ -77,7 +77,7 @@
             // toCurrencyBox
             // 
             toCurrencyBox.FormattingEnabled = true;
-            toCurrencyBox.Items.AddRange(new object[] { "GBP", "EUR", "USD" });
+            toCurrencyBox.Items.AddRange(new object[] { "GBP", "EUR", "USD", "BTC", "ETH", "LTC" });
             toCurrencyBox.Location = new Point(446, 205);
             toCurrencyBox.Name = "toCurrencyBox";
             toCurrencyBox.Size = new Size(181, 23);
