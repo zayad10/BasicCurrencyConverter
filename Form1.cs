@@ -9,6 +9,7 @@ namespace Simple_Currency_Converter
     public partial class Form1 : Form
     {
         private int convertToCurrency = 0;
+        private int convertFromCurrency = 0;
         public Form1()
         {
             InitializeComponent();
@@ -21,12 +22,14 @@ namespace Simple_Currency_Converter
 
         private double GetExchangeRate(string fromCurrency, string toCurrency)
         {
+            this.convertFromCurrency = (int)CurrenciesHelper.GetCurrencyEnum(fromCurrency);
             this.convertToCurrency = (int)CurrenciesHelper.GetCurrencyEnum(toCurrency);
             string json;
             var rate = 0.00;
+
             using (var client = new WebClient())
             {
-                if (convertToCurrency < 2)
+                if (convertToCurrency < 2 && convertFromCurrency < 2)
                 {
                     json = client.DownloadString($"https://open.er-api.com/v6/latest/{fromCurrency}");
 
